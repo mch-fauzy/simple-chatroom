@@ -1,4 +1,4 @@
-import type { Message, Chatroom, CreateMessageParams } from '@/types/chatroom.types'
+import type { Message, Chatroom, CreateMessageParams } from '@/types/chatroom'
 
 export const chatroomService = {
   async fetchChatrooms(): Promise<Chatroom[]> {

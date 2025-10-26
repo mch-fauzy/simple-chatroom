@@ -5,6 +5,7 @@ import type { Message } from '@/types/chatroom'
 export const useChatroomData = () => {
   const [messages, setMessages] = useState<Message[]>([])
   const [chatroomId, setChatroomId] = useState<number | null>(null)
+  const [chatroomName, setChatroomName] = useState<string>('')
   const [error, setError] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(true)
 
@@ -16,6 +17,7 @@ export const useChatroomData = () => {
         if (chatrooms.length > 0) {
           const globalChat = chatrooms.find(c => c.name === 'Global Chat') || chatrooms[0]
           setChatroomId(globalChat.id)
+          setChatroomName(globalChat.name)
           
           const msgs = await chatroomService.fetchMessages(globalChat.id)
           setMessages(msgs)
@@ -51,6 +53,7 @@ export const useChatroomData = () => {
   return {
     messages,
     chatroomId,
+    chatroomName,
     error,
     isLoading,
     setError,

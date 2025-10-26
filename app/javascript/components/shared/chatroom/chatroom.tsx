@@ -16,6 +16,7 @@ const ChatRoom: React.FC = () => {
   const {
     messages,
     chatroomId,
+    chatroomName,
     error,
     setError,
     addMessage,
@@ -70,7 +71,11 @@ const ChatRoom: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 p-4 sm:p-6 lg:p-8">
       <Card className="max-w-5xl mx-auto h-[92vh] flex flex-col shadow-2xl border-0 overflow-hidden">
-        <ChatroomHeader isConnected={isConnected} messageCount={messages.length} />
+        <ChatroomHeader 
+          chatroomName={chatroomName}
+          isConnected={isConnected} 
+          messageCount={messages.length} 
+        />
         
         {/* Messages Area */}
         <CardContent className="flex-1 overflow-hidden p-0 relative">
