@@ -1,7 +1,7 @@
 import React from 'react'
 import { ChatroomEmptyState } from './chatroom-empty-state'
 import { ChatroomMessageItem } from './chatroom-message-item'
-import type { Message } from '@/types/chatroom.types'
+import type { Message } from '@/types/chatroom'
 
 interface ChatroomMessageListProps {
   messages: Message[]

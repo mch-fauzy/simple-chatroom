@@ -1,6 +1,6 @@
 import React from 'react'
 import { formatTime } from '@/lib/format'
-import type { Message } from '@/types/chatroom.types'
+import type { Message } from '@/types/chatroom'
 
 interface ChatroomMessageItemProps {
   message: Message

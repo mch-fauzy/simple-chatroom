@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { createConsumer } from '@rails/actioncable'
-import type { Message } from '@/types/chatroom.types'
+import type { Message } from '@/types/chatroom'
 
 interface UseChatroomCableProps {
   chatroomId: number | null
