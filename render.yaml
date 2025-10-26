@@ -18,6 +18,6 @@ services:
       - key: NODE_VERSION
         value: 22.14.0
       - key: ALLOWED_ORIGIN
-        value: https://simple-chatroom.onrender.com
+        value: https://simple-chatroom-bsn0.onrender.com
       - key: ACTION_CABLE_URL
-        value: wss://simple-chatroom.onrender.com/cable
+        value: wss://simple-chatroom-bsn0.onrender.com/cable

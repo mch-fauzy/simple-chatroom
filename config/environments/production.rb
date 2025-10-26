@@ -90,8 +90,8 @@ Rails.application.configure do
 
   # Configure Action Cable allowed origins for WebSocket connections
   config.action_cable.allowed_request_origins = [
-    ENV.fetch("ALLOWED_ORIGIN") { "https://simple-chatroom.onrender.com" },
+    ENV.fetch("ALLOWED_ORIGIN") { "https://simple-chatroom-bsn0.onrender.com" },
     /https:\/\/simple-chatroom.*\.onrender\.com/
   ]
-  config.action_cable.url = ENV.fetch("ACTION_CABLE_URL") { "wss://simple-chatroom.onrender.com/cable" }
+  config.action_cable.url = ENV.fetch("ACTION_CABLE_URL") { "wss://simple-chatroom-bsn0.onrender.com/cable" }
 end
