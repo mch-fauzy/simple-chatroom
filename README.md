@@ -50,10 +50,10 @@ A real-time chat application built with Ruby on Rails and React, featuring WebSo
    RAILS_MASTER_KEY=your_rails_master_key
    RAILS_ENV=production
    
-   # Database (auto-configured by Render)
+   # Database
    DATABASE_URL=postgresql://...
    
-   # Redis (auto-configured by Render)
+   # Redis
    REDIS_URL=redis://...
    
    # Action Cable
