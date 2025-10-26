@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: simple-chatroom
+    runtime: ruby
+    region: oregon
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+      - key: REDIS_URL
+      - key: RAILS_MASTER_KEY
+        sync: false
+      - key: RAILS_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 22.14.0
+      - key: ALLOWED_ORIGIN
+        value: https://simple-chatroom.onrender.com
+      - key: ACTION_CABLE_URL
+        value: wss://simple-chatroom.onrender.com/cable
