@@ -28,7 +28,7 @@ A real-time chat application built with Ruby on Rails and React, featuring WebSo
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/mch-fauzy/simple-chatroom.git
    cd simple-chatroom
    ```
 
